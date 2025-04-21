@@ -18,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>RELEASE</version>
+        <version>3.2.4</version> <!-- Versión estable -->
         <relativePath/>
     </parent>
 
@@ -39,7 +39,7 @@
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
-            <version>RELEASE</version>
+            <version>12.6.1.jre11</version> <!-- Versión válida -->
         </dependency>
 
         <!-- Validación -->
@@ -62,7 +62,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Joda Time (si lo necesitas) -->
+        <!-- Joda Time -->
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -89,7 +89,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>RELEASE</version>
+                <version>3.11.0</version> <!-- Versión corregida -->
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
